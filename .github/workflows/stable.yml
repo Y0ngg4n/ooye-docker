@@ -35,6 +35,7 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        ref: ref/tags/v3.0
 
       - name: Get latest OOYE tag
         id: get-tag
