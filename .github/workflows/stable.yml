@@ -20,7 +20,7 @@ on:
 
 env:
   REGISTRY: "ghcr.io"
-  IMAGE_NAME: y0nggan/ooye-docker
+  IMAGE_NAME: y0ngg0n/ooye-docker
 
 jobs:
   build:
