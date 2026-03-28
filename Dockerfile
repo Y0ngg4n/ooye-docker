@@ -14,7 +14,7 @@ WORKDIR /app
 # Clone the repository
 # We use an ARG for the version/tag so it can be updated during build.
 # If OOYE_VERSION is "latest", we lookup the latest tag on git.
-ARG OOYE_VERSION=latest
+ARG OOYE_VERSION=v3.0
 RUN set -ex; \
     if [ "${OOYE_VERSION}" = "latest" ]; then \
         VERSION=$(git ls-remote --tags --sort='v:refname' https://gitdab.com/cadence/out-of-your-element.git | grep -v '\^{}' | tail -n1 | sed 's/.*\///'); \
